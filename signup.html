@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <title>Signup Page</title>
+</head>
+<body>
+        <div class="createbox">
+            <form class="form" id="signup" action="\login.html">
+                <h1 class="form__title">Create a account</h1>
+
+                <p id="responsets" style="color: green;"></p>
+
+                <div class="form__input-group">
+                    <label for=""><strong>Username</strong></label>
+                    <br>
+                    <input class="takeinput" type="text" id="username" placeholder="Username">
+                    <div class="form__error form__error1" id="form__error-UN" >Try a different username</div>
+                </div>
+
+                <div class="form__input-group">
+                    <label for=""><strong>Enter a password</strong></label>
+                    <br>
+                    <input class="takeinput" type="password" name="" id="password" placeholder="Password">
+                    <div class="form__error form__error1" id="form__error-UNPS">Username and password required</div>
+                </div>
+
+                <div class="form__input-group">
+                    <label for=""><strong>First name</strong></label>
+                    <br>
+                    <input class="takeinput" type="text" name="" id="firstname" placeholder="first name">
+                </div>
+
+                <div class="form__input-group">
+                    <label for=""><strong>Last name</strong></label>
+                    <br>
+                    <input class="takeinput" type="text" name="" id="lastname" placeholder="last name">
+                </div>
+
+                <button class="form__button" type="submit" onclick="signup()">Create</button>
+
+                <div class="form__link">
+                    <a href="login.html">Already had an account? <br>sign in</a>
+                </div>
+
+            </form>
+            
+        </div>
+        <script src="signup.js"></script>
+</body>
+</html>
